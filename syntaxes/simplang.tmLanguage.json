@@ -16,7 +16,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.other.simplang",
-				"match": "\\b(assign|new_array|random|get_option|get_input|print|print_n)\\b"
+				"match": "\\b(assign|new_array|random|get_option|get_input|print|print_n|in)\\b"
 			},
 			{
 				"name": "keyword.control.simplang",
