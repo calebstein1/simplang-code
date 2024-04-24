@@ -1,0 +1,25 @@
+{
+  "name": "simplang-code",
+  "displayName": "Simplang-Code",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "simplang",
+      "aliases": ["Simplang", "simplang"],
+      "extensions": [".simp",".sl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "simplang",
+      "scopeName": "source.simplang",
+      "path": "./syntaxes/simplang.tmLanguage.json"
+    }]
+  }
+}
