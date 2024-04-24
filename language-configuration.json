@@ -1,30 +1,20 @@
 {
     "comments": {
-        // symbol used for single line comment. Remove this entry if your language does not support line comments
-        "lineComment": "//",
-        // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
-        "blockComment": [ "/*", "*/" ]
+        "lineComment": "; ",
     },
-    // symbols used as brackets
     "brackets": [
-        ["{", "}"],
         ["[", "]"],
-        ["(", ")"]
     ],
-    // symbols that are auto closed when typing
     "autoClosingPairs": [
-        ["{", "}"],
         ["[", "]"],
-        ["(", ")"],
         ["\"", "\""],
-        ["'", "'"]
     ],
-    // symbols that can be used to surround a selection
     "surroundingPairs": [
-        ["{", "}"],
         ["[", "]"],
-        ["(", ")"],
         ["\"", "\""],
-        ["'", "'"]
-    ]
+    ],
+    "indentationRules": {
+        "increaseIndentPattern": "^ *(begin_loop|for_each|if_equal|if_not_equal|if_less|if_less_or_equal|if_greater|if_greater_or_equal).*$",
+        "decreaseIndentPattern": "^ *(end_if|end_loop|end_loop_equal|end_loop_not_equal|end_loop_if_less|end_loop_if_less_or_equal|end_loop_if_greater|end_loop_if_greater_or_equal).*$"
+    }
 }
